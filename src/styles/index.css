@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-ivory: #F5F1E8;
+    --text-charcoal: #252525;
+    --accent-terracotta: #B66A4D;
+    --accent-olive: #777B62;
+    --border-stone: #B8B4AC;
+  }
+
+  html {
+    background-color: #F5F1E8;
+    color: #252525;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    overflow-x: hidden;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  }
+
+  ::selection {
+    background-color: rgba(182, 106, 77, 0.25);
+    color: #965239;
+  }
+
+  /* Custom museum scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #F5F1E8;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #D3CFCA;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #B66A4D;
+  }
+}
+
+@layer components {
+  /* Museum Editorial Headings */
+  .font-display-serif {
+    font-family: 'Playfair Display', Georgia, serif;
+    letter-spacing: -0.015em;
+  }
+
+  .font-academic {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+
+  /* Subtle museum stone card */
+  .museum-card {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(184, 180, 172, 0.35);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .museum-card:hover {
+    border-color: rgba(182, 106, 77, 0.5);
+    box-shadow: 0 12px 30px -10px rgba(37, 37, 37, 0.08);
+  }
+
+  /* Terracotta button primary */
+  .btn-terracotta {
+    background-color: #B66A4D;
+    color: #FFFFFF;
+    transition: all 0.2s ease;
+  }
+  .btn-terracotta:hover {
+    background-color: #965239;
+    transform: translateY(-1px);
+  }
+
+  /* Olive button secondary */
+  .btn-olive {
+    background-color: #777B62;
+    color: #FFFFFF;
+    transition: all 0.2s ease;
+  }
+  .btn-olive:hover {
+    background-color: #5F624E;
+    transform: translateY(-1px);
+  }
+
+  /* Elegant badge */
+  .museum-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    border: 1px solid rgba(184, 180, 172, 0.4);
+    background-color: rgba(245, 241, 232, 0.7);
+  }
+}
+
+/* Accessible focus outlines */
+*:focus-visible {
+  outline: 2px solid #B66A4D;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
