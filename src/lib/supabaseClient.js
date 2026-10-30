@@ -29,6 +29,7 @@ export const supabase = isSupabaseConfigured
 /**
  * Fetch approved comments from the Supabase 'comments' table.
  * Filtered by status = 'approved' and ordered by created_at descending.
+ * Gracefully handles databases with or without the parent_id column.
  */
 export async function getComments(artworkId = 'all') {
   if (!isSupabaseConfigured || !supabase) {
@@ -39,9 +40,10 @@ export async function getComments(artworkId = 'all') {
   }
 
   try {
+    // Attempt query with parent_id for threaded replies
     let query = supabase
       .from('comments')
-      .select('id, display_name, comment_text, artwork_id, rating, status, created_at')
+      .select('id, display_name, comment_text, artwork_id, rating, status, created_at, parent_id')
       .eq('status', 'approved')
       .order('created_at', { ascending: false });
 
@@ -49,7 +51,29 @@ export async function getComments(artworkId = 'all') {
       query = query.eq('artwork_id', artworkId);
     }
 
-    const { data, error } = await query;
+    let { data, error } = await query;
+
+    // If parent_id does not exist yet (code 42703), fall back to selecting without parent_id
+    if (error && (error.code === '42703' || error.message?.includes('parent_id'))) {
+      let fallbackQuery = supabase
+        .from('comments')
+        .select('id, display_name, comment_text, artwork_id, rating, status, created_at')
+        .eq('status', 'approved')
+        .order('created_at', { ascending: false });
+
+      if (artworkId && artworkId !== 'all') {
+        fallbackQuery = fallbackQuery.eq('artwork_id', artworkId);
+      }
+
+      const fallbackResult = await fallbackQuery;
+      if (fallbackResult.data) {
+        data = fallbackResult.data.map(item => ({ ...item, parent_id: null }));
+        error = null;
+      } else {
+        error = fallbackResult.error;
+      }
+    }
+
     return { data, error };
   } catch (err) {
     return { data: null, error: err };
@@ -57,10 +81,10 @@ export async function getComments(artworkId = 'all') {
 }
 
 /**
- * Insert a new comment into the Supabase 'comments' table.
+ * Insert a new comment or threaded reply into the Supabase 'comments' table.
  * Enforces client-side validation that matches RLS database check constraints.
  */
-export async function postComment({ displayName, commentText, artworkId = 'general', rating = 5 }) {
+export async function postComment({ displayName, commentText, artworkId = 'general', rating = 5, parentId = null }) {
   if (!isSupabaseConfigured || !supabase) {
     return {
       data: null,
@@ -79,19 +103,30 @@ export async function postComment({ displayName, commentText, artworkId = 'gener
     return { data: null, error: new Error('Comment must be between 3 and 1000 characters.') };
   }
 
+  const insertPayload = {
+    display_name: cleanName,
+    comment_text: cleanComment,
+    artwork_id: artworkId,
+    rating: Number(rating) || 5,
+    status: 'approved' // matches RLS policy
+  };
+
+  if (parentId) {
+    insertPayload.parent_id = parentId;
+  }
+
   try {
     const { data, error } = await supabase
       .from('comments')
-      .insert([
-        {
-          display_name: cleanName,
-          comment_text: cleanComment,
-          artwork_id: artworkId,
-          rating: Number(rating) || 5,
-          status: 'approved' // matches RLS policy
-        }
-      ])
+      .insert([insertPayload])
       .select();
+
+    if (error && (error.code === '42703' || error.message?.includes('parent_id'))) {
+      return {
+        data: null,
+        error: new Error('The database is awaiting the parent_id column migration. Please run database/add_replies_migration.sql in your Supabase SQL Editor.')
+      };
+    }
 
     return { data, error };
   } catch (err) {

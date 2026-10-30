@@ -21,6 +21,7 @@ CREATE TABLE IF NOT EXISTS public.comments (
     comment_text VARCHAR(1000) NOT NULL,
     artwork_id VARCHAR(80) DEFAULT 'general',
     rating SMALLINT DEFAULT 5 CHECK (rating >= 1 AND rating <= 5),
+    parent_id UUID REFERENCES public.comments(id) ON DELETE CASCADE,
     status VARCHAR(20) NOT NULL DEFAULT 'approved' CHECK (status IN ('pending', 'approved', 'flagged', 'hidden')),
     created_at TIMESTAMP WITH TIME ZONE DEFAULT timezone('utc'::text, now()) NOT NULL
 );
@@ -31,6 +32,9 @@ ON public.comments (status, created_at DESC);
 
 CREATE INDEX IF NOT EXISTS idx_comments_artwork_id 
 ON public.comments (artwork_id);
+
+CREATE INDEX IF NOT EXISTS idx_comments_parent_id 
+ON public.comments (parent_id);
 
 -- 3. Enable Row Level Security (RLS)
 ALTER TABLE public.comments ENABLE ROW LEVEL SECURITY;
