@@ -69,7 +69,7 @@ export const guessSculpturesData = [
       'Clue 1: I am a monumental public sculpture located on Epifanio de los Santos Avenue (EDSA) in the Philippines.',
       'Clue 2: I am crafted from welded bronze and brass sheets over an intricate structural steel framework.',
       'Clue 3: I feature a dynamic assembly of 37 figures surrounding a towering motherland figure ("Inang Bayan") celebrating the 1986 peaceful revolution.',
-      'Clue 4: I was sculpted by nationalist Filipino artist Eduardo Castrillo and appear as Figure 1 in Module 6.'
+      'Clue 4: I was sculpted by nationalist Filipino artist Eduardo Castrillo and stand as a defining monument of modern Philippine public art.'
     ],
     hint: 'A Filipino national monument celebrating restored democracy.',
     funFact: 'Castrillo created this monumental piece to show how still metal can vibrate with the kinetic energy of human unity.'
@@ -96,7 +96,7 @@ export const guessSculpturesData = [
     clues: [
       'Clue 1: I measure 240 feet long and 65 feet high, making me one of the largest monolithic statues on earth.',
       'Clue 2: I was carved directly from the natural limestone bedrock of a desert plateau.',
-      'Clue 3: According to Module 6, I symbolize the union of "human intelligence" and "animal strength."',
+      'Clue 3: I famously symbolize the union of "human intelligence" with "animal strength."',
       'Clue 4: I guard the funerary complex of an ancient Old Kingdom pharaoh on the west bank of the Nile.'
     ],
     hint: 'A creature with the head of an Egyptian ruler and the body of a crouching lion.',
@@ -162,7 +162,7 @@ export const decodeArtworksData = [
       },
       {
         aspect: 'Renaissance Philosophy',
-        question: 'How does this marble statue embody the module’s assertion that sculpture exemplifes concepts through visual equivalents?',
+        question: 'How does this marble statue embody the aesthetic principle that sculpture exemplifies concepts through visual equivalents?',
         sampleInterpretation: 'David became the visual equivalent of civic freedom for the Republic of Florence—proving that human dignity and moral courage can defeat tyrannical giants.'
       }
     ]

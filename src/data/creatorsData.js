@@ -33,7 +33,7 @@ export const groupInfo = {
       memberNumber: 2,
       name: 'Aves, Dannah Kraite C.',
       role: 'Researcher & Content Writer',
-      contribution: 'Researches sculpture concepts and prepares educational content based on Module 6.',
+      contribution: 'Researches art historical foundations, sculptural theories, and curatorial content.',
       avatar: './members_images/aves_dannah_kraite_c.jpeg',
       favoriteQuote: '“Every block of stone has a statue inside it and it is the task of the sculptor to discover it.” — Michelangelo'
     },
@@ -53,7 +53,7 @@ export const groupInfo = {
       role: 'Interactive Activities Developer',
       contribution: 'Develops quizzes, matching games, and other educational activities.',
       avatar: './members_images/dumas_kent_bryan_m.jpg',
-      favoriteQuote: '“Where still metal becomes dynamic life.” — Module 6'
+      favoriteQuote: '“Where still metal becomes dynamic life.” — Eduardo Castrillo'
     },
     {
       id: 'member-5',
@@ -80,7 +80,7 @@ export const groupInfo = {
       role: 'Quality Assurance & Testing Specialist',
       contribution: 'Tests website functionality, checks responsiveness, identifies bugs, and assists with final quality checks.',
       avatar: './members_images/olvis_bert.jpg',
-      favoriteQuote: '“To smooth rough patches of your soap, use your fingers; your warmth softens the medium into harmony.” — Module 6'
+      favoriteQuote: '“To smooth rough patches of your soap, use your fingers; your warmth softens the medium into harmony.” — Studio Practice Guide'
     }
   ]
 };

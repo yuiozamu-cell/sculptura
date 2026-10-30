@@ -16,7 +16,7 @@ export default function Hero({ onExploreClick }) {
             <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full border border-stone-gray/40 bg-white/60 shadow-xs">
               <span className="w-2 h-2 rounded-full bg-terracotta animate-pulse"></span>
               <span className="text-xs font-semibold tracking-wider uppercase text-charcoal-700">
-                Art Appreciation • Module 6 Digital Museum
+                Art Appreciation • Digital Museum Exhibition
               </span>
             </div>
 
@@ -36,13 +36,13 @@ export default function Hero({ onExploreClick }) {
               human courage, spiritual reverence, and enduring philosophy.
             </p>
 
-            {/* Quote from Module 6 Page 49 */}
+            {/* Guiding Curatorial Quote */}
             <div className="border-l-2 border-terracotta pl-4 py-1.5 my-6 bg-white/40 rounded-r-md">
               <p className="font-academic italic text-lg text-charcoal-800">
                 “Sculpture is the best comment that a painter can make on painting.”
               </p>
               <span className="text-xs font-semibold text-charcoal-500 uppercase tracking-widest mt-1 block">
-                — Pablo Picasso (Cited in Module 6)
+                — Pablo Picasso
               </span>
             </div>
 
@@ -82,8 +82,8 @@ export default function Hero({ onExploreClick }) {
                 <span className="text-xs text-charcoal-500">Carve, Cast, Mold & Assemble</span>
               </div>
               <div>
-                <span className="block font-display-serif text-2xl font-bold text-olive">100% Aligned</span>
-                <span className="text-xs text-charcoal-500">Module 6 Educational Core</span>
+                <span className="block font-display-serif text-2xl font-bold text-olive">Fine Arts</span>
+                <span className="text-xs text-charcoal-500">Historical & Modern Theory</span>
               </div>
             </div>
           </div>
@@ -97,14 +97,14 @@ export default function Hero({ onExploreClick }) {
                 <div className="relative overflow-hidden rounded-xl bg-charcoal-900 aspect-4/5 group">
                   <img
                     src="./images/people_power_monument_module.jpeg"
-                    alt="People Power Monument by Eduardo Castrillo (Module 6 Figure 1)"
+                    alt="People Power Monument by Eduardo Castrillo"
                     className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-linear-to-t from-charcoal/90 via-charcoal/20 to-transparent"></div>
                   
                   <div className="absolute bottom-0 left-0 right-0 p-5 text-white">
                     <span className="text-[11px] font-semibold uppercase tracking-wider text-terracotta-light bg-black/40 px-2.5 py-0.5 rounded-full inline-block mb-1.5 backdrop-blur-xs">
-                      Figure 1 • Module 6 Primary Work
+                      Featured Monumental Work
                     </span>
                     <h3 className="font-display-serif text-xl font-bold">
                       People Power Monument

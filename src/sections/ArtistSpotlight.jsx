@@ -12,7 +12,7 @@ export default function ArtistSpotlight({ onCommentClick }) {
         <SectionHeader
           tag="Master Sculptor Profile"
           title="Artist Spotlight: Michelangelo Buonarroti"
-          subtitle="An in-depth study of the High Renaissance titan, his subtractive philosophy, and the iconic marble statue 'David' highlighted in Module 6 Figure 3."
+          subtitle="An in-depth study of the High Renaissance master, his subtractive philosophy, and the monumental marble masterpiece 'David'."
         />
 
         {/* Master Presentation Card */}
@@ -33,7 +33,7 @@ export default function ArtistSpotlight({ onCommentClick }) {
               {/* Top Tag */}
               <div className="relative z-10">
                 <span className="text-[11px] font-bold uppercase tracking-widest text-terracotta-light bg-terracotta/20 px-3 py-1 rounded-full backdrop-blur-xs border border-terracotta/30">
-                  Figure 3 • Module 6 Focus
+                  High Renaissance Masterpiece
                 </span>
                 <h3 className="font-display-serif text-3xl sm:text-4xl font-bold text-white mt-4">
                   Michelangelo
@@ -73,7 +73,7 @@ export default function ArtistSpotlight({ onCommentClick }) {
                 </h4>
 
                 <p className="text-sm text-charcoal-700 leading-relaxed mt-4">
-                  Michelangelo's <em>David</em> is celebrated in Module 6 as the quintessential embodiment of 
+                  Michelangelo's <em>David</em> is celebrated as the quintessential embodiment of 
                   <strong>subtractive carving</strong>. Unlike painters who add pigments to a blank canvas, Michelangelo 
                   began with a colossal eighteen-foot block of Carrara marble—derisively known as <em>"the Giant"</em>, which 
                   had lain damaged and abandoned in the courtyard of Florence Cathedral for four decades.
@@ -104,13 +104,13 @@ export default function ArtistSpotlight({ onCommentClick }) {
                   </div>
                 </div>
 
-                {/* Module 6 Synthesis */}
+                {/* Sculptural Theory Synthesis */}
                 <div className="p-4 bg-olive-50 border-l-3 border-olive rounded-r-xl text-xs text-charcoal-800 space-y-1">
                   <span className="font-bold text-olive-dark block">
-                    Module 6 Academic Alignment:
+                    Sculptural Theory & Aesthetic Philosophy:
                   </span>
                   <p>
-                    Module 6 emphasizes that <em>"shape is the dominant characteristic of sculptures, with the human body being its primary subject."</em> 
+                    Aesthetic theory emphasizes that <em>"shape is the dominant characteristic of sculptures, with the human body being its primary subject."</em> 
                     David exemplifies how a visual equivalent of human dignity, divine proportion, and civic liberty was achieved through pure form.
                   </p>
                 </div>
@@ -119,7 +119,7 @@ export default function ArtistSpotlight({ onCommentClick }) {
               {/* Attribution & Discussion Action */}
               <div className="pt-6 border-t border-stone-gray/20 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                 <div className="text-[11px] text-charcoal-500">
-                  <span>Photo Credit: Marta Pons Moreta / Shutterstock (Module 6 Figure 3)</span>
+                  <span>Photo Credit: Marta Pons Moreta / Shutterstock</span>
                 </div>
                 <button
                   onClick={() => onCommentClick && onCommentClick('david')}

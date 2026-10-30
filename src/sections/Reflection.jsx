@@ -22,7 +22,7 @@ export default function Reflection() {
     {
       qNum: '04',
       question: 'What are the goals of an artist in creating a sculpture?',
-      reflection: 'Module 6 states that the core objective of sculpture is to “exemplify a concept by forming a visual equivalent.” The artist seeks to regenerate reality perceptually—to communicate complex emotions, sacred mythologies, or cultural ideals through volume, proportion, and balance. A successful sculpture does not merely depict an object; it commands space and provokes contemplation.'
+      reflection: 'At its core philosophical foundation, the objective of sculpture is to “exemplify a concept by forming a visual equivalent.” The artist seeks to regenerate reality perceptually—communicating complex emotions, sacred mythologies, or cultural ideals through volume, proportion, and tactile balance. A successful sculpture does not merely depict an object; it commands space and provokes contemplation.'
     },
     {
       qNum: '05',
@@ -48,7 +48,7 @@ export default function Reflection() {
         <SectionHeader
           tag="Art Appreciation Reflection"
           title="Where Form Becomes Meaning"
-          subtitle="Critical group synthesis examining the essential questions of Module 6: how spatial form, tactile materials, and monumental scale shape human culture."
+          subtitle="Critical group synthesis examining the essential dimensions of sculpture: how spatial form, tactile materials, and monumental scale shape human culture."
         />
 
         {/* Central Quote Callout */}
@@ -59,7 +59,7 @@ export default function Reflection() {
             Its objective is to exemplify a concept by forming a visual equivalent.”
           </p>
           <div className="mt-4 flex items-center justify-center gap-2 text-xs font-semibold uppercase tracking-widest text-terracotta">
-            <span>Module 6 Fundamental Axiom</span>
+            <span>Curatorial Axiom</span>
             <span>•</span>
             <span>Arnulfo B. Ramos (2018)</span>
           </div>
@@ -68,7 +68,7 @@ export default function Reflection() {
         {/* 5 Post-Test Analytical Inquiries */}
         <div className="space-y-6 max-w-4xl mx-auto">
           <h3 className="font-display-serif text-2xl font-bold text-charcoal mb-6 text-center">
-            Synthesis of Module 6 Post-Test Inquiries
+            Critical Hermeneutic Synthesis & Inquiries
           </h3>
 
           {postTestReflections.map((item) => (

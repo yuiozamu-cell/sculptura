@@ -140,7 +140,7 @@ export default function DigitalStudio() {
       metalness: 0.02,
       clearcoat: 0.35,
       specularColor: 0xFFFFFF,
-      description: 'Module 6 core activity: soft translucent bar carved with craft sticks and smoothed with finger warmth.'
+      description: 'Soft translucent bar carved with craft tools and smoothed with gentle fingertip warmth.'
     },
     {
       id: 'clay',
@@ -179,17 +179,17 @@ export default function DigitalStudio() {
 
   // Starting Mesh Base Shapes
   const shapePresets = [
-    { id: 'soap-bar', name: 'Bar Soap Block', icon: Box, desc: 'Rectangular rounded bar (Module 6 Self-Evaluation)' },
+    { id: 'soap-bar', name: 'Bar Soap Block', icon: Box, desc: 'Rectangular rounded bar (Classic atelier carving block)' },
     { id: 'sphere', name: 'Clay Sphere / Mass', icon: Circle, desc: 'Uniform organic mass for heads, creatures & abstract forms' },
     { id: 'cylinder', name: 'Torso Maquette', icon: Shapes, desc: 'Upright cylindrical volume for standing figurative studies' },
   ];
 
   // Tool Definitions
   const tools = [
-    { id: 'carve', name: 'Subtractive Carve', icon: Hammer, desc: 'Pushes surface inward along normals (Module Step 4)' },
+    { id: 'carve', name: 'Subtractive Carve', icon: Hammer, desc: 'Pushes surface inward along surface normals (Subtractive)' },
     { id: 'buildup', name: 'Clay Build-up', icon: Sparkles, desc: 'Pulls surface outward along normals (Additive molding)' },
-    { id: 'smooth', name: 'Fingertip Heat Smooth', icon: Flame, desc: 'Relaxes and smooths rough patches with body heat (Module Step 6)' },
-    { id: 'flatten', name: 'Craft Stick Scrape', icon: Sliders, desc: 'Scrapes flat planes into surface (Module Step 4)' },
+    { id: 'smooth', name: 'Fingertip Heat Smooth', icon: Flame, desc: 'Relaxes and smooths rough patches with gentle surface warmth' },
+    { id: 'flatten', name: 'Craft Stick Scrape', icon: Sliders, desc: 'Scrapes planar facets and planes into the surface' },
     { id: 'inflate', name: 'Volumize / Inflate', icon: Volume2, desc: 'Expands local geometry outwards' },
   ];
 
@@ -682,7 +682,7 @@ export default function DigitalStudio() {
         <SectionHeader
           tag="Original Creative Output • 3D Sculpting Atelier"
           title="Digital Sculpture Studio"
-          subtitle="A real-time WebGL 3D sculpting simulator built purely in client-side JavaScript. Spin, carve, smooth, and model your virtual sculpture in full 3D, inspired by Module 6 and contemporary tools like SculpGL."
+          subtitle="A real-time WebGL 3D sculpting simulator built purely in client-side JavaScript. Spin, carve, smooth, and model your virtual sculpture in full 3D, inspired by traditional atelier techniques and modern 3D tools like SculpGL."
         />
 
         {/* MAIN STUDIO WORKBENCH */}
@@ -731,7 +731,7 @@ export default function DigitalStudio() {
               {/* 2. Sculpting Tools */}
               <div>
                 <label className="text-[11px] font-bold uppercase tracking-wider text-charcoal-500 block mb-2">
-                  Sculpting Brush (Module 6 Techniques)
+                  Sculpting Brush (Atelier Techniques)
                 </label>
                 <div className="space-y-1.5">
                   {tools.map((t) => {

@@ -29,7 +29,7 @@ export default function Footer() {
             </div>
 
             <p className="text-xs text-stone-light/70 leading-relaxed max-w-sm font-light">
-              A contemporary digital sculpture museum created for Art Appreciation (GE-Art App) Module 6. 
+              A contemporary digital sculpture museum created for Art Appreciation (GE-Art App). 
               Celebrating the tactile, monumental, and spiritual expressions of three-dimensional form.
             </p>
 

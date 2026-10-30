@@ -123,10 +123,10 @@ export default function ArtworkModal({ artwork, onClose, onCommentClick }) {
             <div className="space-y-3 text-sm text-charcoal-700 leading-relaxed">
               <p>{artwork.description}</p>
               
-              {/* Module Connection Box */}
+              {/* Curatorial Context Box */}
               <div className="bg-olive-50 border-l-3 border-olive p-3 rounded-r-md text-xs text-charcoal-800">
                 <span className="font-bold text-olive-dark block mb-1">
-                  Module 6 Curriculum Context:
+                  Curatorial Analysis & Historical Significance:
                 </span>
                 {artwork.moduleSignificance}
               </div>

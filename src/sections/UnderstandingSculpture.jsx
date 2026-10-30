@@ -37,9 +37,9 @@ export default function UnderstandingSculpture() {
         
         {/* Section Header */}
         <SectionHeader
-          tag="Curriculum Foundation • Module 6"
+          tag="Foundations of 3D Art"
           title="Understanding Sculpture"
-          subtitle="Explore the origins, significance, anatomical types, techniques, and core terminology as documented in Arnulfo B. Ramos's Art Appreciation curriculum."
+          subtitle="Explore the origins, significance, structural types, techniques, and foundational terminology of sculptural art across history."
         />
 
         {/* Pillar Navigation Tabs */}
@@ -113,10 +113,10 @@ export default function UnderstandingSculpture() {
                 </div>
               </div>
 
-              {/* Materials Hierarchy according to Module 6 */}
+              {/* Materials Hierarchy */}
               <div className="p-6 bg-white rounded-xl border border-stone-gray/30">
                 <h4 className="font-display-serif text-lg font-bold text-charcoal mb-3">
-                  Historical Materials Documented in Module 6
+                  Historical & Traditional Sculptural Materials
                 </h4>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
                   <div className="p-3 bg-ivory rounded-lg">
@@ -134,10 +134,10 @@ export default function UnderstandingSculpture() {
                 </div>
               </div>
 
-              {/* Prehistoric & Egyptian Case Studies directly from Module 6 */}
+              {/* Prehistoric & Egyptian Case Studies */}
               <div>
                 <h4 className="font-display-serif text-2xl font-bold text-charcoal mb-4">
-                  Module 6 Foundational Case Studies
+                  Foundational Historical Case Studies
                 </h4>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   
@@ -171,7 +171,7 @@ export default function UnderstandingSculpture() {
                     </h5>
                     <p className="text-xs text-charcoal-600 mt-2 leading-relaxed">
                       Measuring <strong>240 feet long and 65 feet high</strong>, this colossal sandstone monolith depicts the portrait 
-                      of Pharaoh Khafre joined to the crouching body of a lion. Module 6 highlights that Egyptian art was founded upon 
+                      of Pharaoh Khafre joined to the crouching body of a lion. Historical records highlight that Egyptian art was founded upon 
                       belief in life after death; combining the pharaoh’s head with a lion’s body synthesized 
                       <strong>human intelligence with animal strength</strong> to guard the pharaoh's funerary complex for eternity.
                     </p>
@@ -191,20 +191,20 @@ export default function UnderstandingSculpture() {
                 </h3>
               </div>
 
-              {/* Core Definition of Importance from Module 6 */}
+              {/* Core Definition of Importance */}
               <div className="bg-terracotta-50/60 p-6 rounded-xl border border-terracotta/30">
                 <h4 className="font-display-serif text-xl font-bold text-terracotta-dark mb-2">
                   “A Perceptive-Regeneration of Reality”
                 </h4>
                 <p className="text-sm text-charcoal-800 leading-relaxed">
-                  Module 6 defines sculpture as <em>“a perceptive-regeneration of reality through the use of three-dimensional form.”</em> 
+                  Sculpture is defined as <em>“a perceptive-regeneration of reality through the use of three-dimensional form.”</em> 
                   As a specialized fine art, its core objective is to <strong>exemplify an abstract concept by forming a physical visual equivalent</strong>. 
                   Because shape is the dominant characteristic of sculptural art, the human anatomy and animal forms have historically served 
                   as its primary and most resonant subject matters.
                 </p>
               </div>
 
-              {/* 4 Societal Dimensions according to Module 6 */}
+              {/* 4 Societal Dimensions of Sculpture */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 <div className="p-5 bg-white border border-stone-gray/30 rounded-xl shadow-xs">
                   <div className="w-8 h-8 rounded-full bg-terracotta/10 text-terracotta flex items-center justify-center font-bold text-sm mb-3">
@@ -292,9 +292,9 @@ export default function UnderstandingSculpture() {
                     <em>“A statue is a life-size or a larger size of a sculpture of a person or an animal, made of metal, stone or wood.”</em>
                   </p>
                   <div className="p-3 bg-white border border-stone-gray/20 rounded-lg text-xs space-y-1">
-                    <span className="font-semibold text-terracotta block">Module Benchmark:</span>
+                    <span className="font-semibold text-terracotta block">Monumental Exemplar:</span>
                     <p className="text-charcoal-600">
-                      Cites the <strong>Spring Temple Buddha in Henan, China</strong> standing at <strong>420 feet (128 meters)</strong> as the world's tallest statue.
+                      The <strong>Spring Temple Buddha in Henan, China</strong> standing at <strong>420 feet (128 meters)</strong> exemplifies colossal assembled statuary.
                     </p>
                   </div>
                 </div>
@@ -426,7 +426,7 @@ export default function UnderstandingSculpture() {
                     The additive process of gathering and joining disparate materials (scraps, junk, industrial metal) to create an assembled artwork.
                   </p>
                   <div className="mt-3 p-2.5 bg-ivory rounded-md text-[11px] text-charcoal-700">
-                    <strong>Module 6 Example:</strong> Martin Puryear’s network of welded, sandblasted stainless steel tubes bound together by strands of silver and patented bronze.
+                    <strong>Curatorial Example:</strong> Martin Puryear’s network of welded, sandblasted stainless steel tubes bound together by strands of silver and patented bronze.
                   </div>
                 </div>
 
@@ -504,7 +504,7 @@ export default function UnderstandingSculpture() {
                     </div>
 
                     <div className="mt-3 pt-2 border-t border-stone-gray/20 flex items-center justify-between text-[10px] text-charcoal-400">
-                      <span>Source: {item.moduleReference}</span>
+                      <span>Curatorial Domain: {item.moduleReference}</span>
                       <CheckCircle2 className="w-3.5 h-3.5 text-olive" />
                     </div>
                   </div>

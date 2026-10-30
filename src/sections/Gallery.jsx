@@ -8,7 +8,7 @@ export default function Gallery({ onSelectArtwork, onCommentClick }) {
 
   const filterCategories = [
     { id: 'all', label: 'All Curated Works' },
-    { id: 'module-figures', label: 'Module Figures (1-5)' },
+    { id: 'module-figures', label: 'Iconic Masterpieces' },
     { id: 'carving', label: 'Subtractive Carving' },
     { id: 'casting', label: 'Additive & Casting' },
     { id: 'monumental', label: 'Monumental Statues' },
@@ -38,7 +38,7 @@ export default function Gallery({ onSelectArtwork, onCommentClick }) {
         <SectionHeader
           tag="Curated Exhibition"
           title="The Sculpture Gallery"
-          subtitle="Explore prominent historical and contemporary sculptures highlighted throughout Module 6, examining form, physical medium, cultural context, and human meaning."
+          subtitle="Explore prominent historical and contemporary sculptures from ancient antiquity to modern civic monuments, examining form, physical medium, cultural context, and human meaning."
         />
 
         {/* Filter Pills */}

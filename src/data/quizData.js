@@ -1,7 +1,7 @@
 /**
  * SCULPTURA - Interactive Sculpture Quiz
- * 12 Questions strictly grounded in Module 6
- * (Arnulfo B. Ramos, 2018: "Art Appreciation for the New General Education Curriculum")
+ * 12 Questions grounded in art history, foundational terminology,
+ * and classical sculptural techniques (Arnulfo B. Ramos, 2018).
  */
 
 export const quizQuestions = [
@@ -15,12 +15,12 @@ export const quizQuestions = [
       { id: 'D', text: 'Scalprum — meaning "iron tool"' }
     ],
     correctAnswer: 'A',
-    explanation: 'According to Module 6 (Page 49), "Sculpture is from the Latin word sculpere which means \'to carve.\'"',
-    moduleReference: 'Module 6, Section 6.1 (Page 49)'
+    explanation: 'Sculpture originates from the Latin word "sculpere", which literally translates to "to carve".',
+    moduleReference: 'Etymology & Origins'
   },
   {
     id: 2,
-    question: 'How does sculpture engage our senses differently from paintings, as explained by Sheldon (1968) in the module?',
+    question: 'How does sculpture engage our senses differently from paintings, as observed by art scholar Sheldon (1968)?',
     options: [
       { id: 'A', text: 'It uses brighter pigment and chemical glazes' },
       { id: 'B', text: 'It occupies space as a three-dimensional mass through carving, casting, modeling, or assembling' },
@@ -28,12 +28,12 @@ export const quizQuestions = [
       { id: 'D', text: 'It is purely conceptual and requires no physical touch' }
     ],
     correctAnswer: 'B',
-    explanation: 'Module 6 (Page 49) cites Sheldon (1968), noting that sculpture engages our senses differently than paintings because it occupies space as a three-dimensional mass.',
-    moduleReference: 'Module 6, Section 6.1 (Page 49)'
+    explanation: 'Art theorist Sheldon (1968) observed that sculpture engages our human senses fundamentally differently than paintings because it occupies physical space as a tangible three-dimensional mass.',
+    moduleReference: 'Spatial Perception'
   },
   {
     id: 3,
-    question: 'What is the Löwenmensch, recognized in the module as one of the oldest sculptures discovered?',
+    question: 'What is the Löwenmensch, recognized as one of the oldest surviving sculptures in human archaeology?',
     options: [
       { id: 'A', text: 'A bronze statue of an Egyptian pharaoh from Alexandria' },
       { id: 'B', text: 'A 12-inch ivory statuette from Hohlenstein-Stadel, Germany depicting a human figure with a feline face' },
@@ -41,12 +41,12 @@ export const quizQuestions = [
       { id: 'D', text: 'A marble bust carved by ancient Greek masters in Athens' }
     ],
     correctAnswer: 'B',
-    explanation: 'Module 6 (Page 50) explains that the Löwenmensch ("lion-human") is a Paleolithic ivory statuette dating approximately 30,000 BCE from a cave in Hohlenstein-Stadel, Germany, measuring about 12" tall.',
-    moduleReference: 'Module 6, Section 6.1 (Page 50)'
+    explanation: 'The Löwenmensch ("lion-human") is an Upper Paleolithic ivory statuette dating approximately 38,000–40,000 BCE from Stadel Cave in Germany, measuring approximately 12 inches tall.',
+    moduleReference: 'Prehistoric Origins'
   },
   {
     id: 4,
-    question: 'According to the module, what symbolic combination does the Great Sphinx of Giza represent?',
+    question: 'What symbolic combination does the Great Sphinx of Giza represent in ancient Egyptian art?',
     options: [
       { id: 'A', text: 'Divine wind and ocean tides' },
       { id: 'B', text: 'Human intelligence and animal strength' },
@@ -54,12 +54,12 @@ export const quizQuestions = [
       { id: 'D', text: 'Mortal frailty and eternal sorrow' }
     ],
     correctAnswer: 'B',
-    explanation: 'Module 6 (Page 50) notes that adding the head of Pharaoh Khafre to the crouching figure of a lion "suggests the combination of human intelligence and animal strength."',
-    moduleReference: 'Module 6, Section 6.1 (Page 50)'
+    explanation: 'In ancient Egyptian iconography, uniting the head of Pharaoh Khafre with the couchant figure of a lion symbolizes the fusion of human intelligence and animal strength to guard sacred burial precincts.',
+    moduleReference: 'Symbolism & Monoliths'
   },
   {
     id: 5,
-    question: 'What are the reported dimensions of the Great Sphinx of Egypt as documented in Module 6?',
+    question: 'What are the recorded dimensions of the Great Sphinx of Giza?',
     options: [
       { id: 'A', text: '120 feet long and 30 feet high' },
       { id: 'B', text: '240 feet long and 65 feet high' },
@@ -67,12 +67,12 @@ export const quizQuestions = [
       { id: 'D', text: '500 feet long and 100 feet high' }
     ],
     correctAnswer: 'B',
-    explanation: 'Module 6 (Page 50) specifically records: "The Great Sphinx of Egypt is an enormous sandstone sculpture, measuring 240\' ft. Long and 65\' ft. High."',
-    moduleReference: 'Module 6, Section 6.1 (Page 50)'
+    explanation: 'The Great Sphinx of Giza is an enormous limestone monolith measuring approximately 240 feet (73 m) long and 65 feet (20 m) high.',
+    moduleReference: 'Monumental Dimensions'
   },
   {
     id: 6,
-    question: 'How does Module 6 define a "Bust"?',
+    question: 'In classical sculptural taxonomy, how is a "Bust" defined?',
     options: [
       { id: 'A', text: 'A full-length statue exceeding 100 meters' },
       { id: 'B', text: 'A structural design for bridges and architectural tombs' },
@@ -80,12 +80,12 @@ export const quizQuestions = [
       { id: 'D', text: 'An assemblage of junk and welded scraps' }
     ],
     correctAnswer: 'C',
-    explanation: 'Under Types of Sculptures, Module 6 (Page 50) defines a bust as "a sculpted and painted representation of the upper part of the human figure such as the head, neck, shoulders, chest or breast."',
-    moduleReference: 'Module 6, Section 6.5 (Page 50)'
+    explanation: 'In sculptural taxonomy, a bust is a sculpted and painted representation of the upper part of the human figure, such as the head, neck, shoulders, chest, or breast.',
+    moduleReference: 'Structural Classifications'
   },
   {
     id: 7,
-    question: 'Which sculpture is cited in Module 6 as the world’s tallest statue at 420 feet (128 meters)?',
+    question: 'Which monumental sculpture stands at 420 feet (128 meters) in Henan, China, exemplifying colossal copper statuary?',
     options: [
       { id: 'A', text: 'Christ the Redeemer in Brazil' },
       { id: 'B', text: 'Spring Temple Buddha in Henan, China' },
@@ -93,12 +93,12 @@ export const quizQuestions = [
       { id: 'D', text: 'People Power Monument in Manila' }
     ],
     correctAnswer: 'B',
-    explanation: 'Module 6 (Page 51) highlights: "The world\'s tallest statue is the 420 feet (128 meters) Spring Temple Buddha in Henan, China."',
-    moduleReference: 'Module 6, Section 6.5 (Page 51)'
+    explanation: 'The Spring Temple Buddha in Henan, China stands 420 feet (128 meters) tall (reaching 208 meters with pedestals), cast from over 1,100 pieces of copper alloy.',
+    moduleReference: 'Colossal Statuary'
   },
   {
     id: 8,
-    question: 'What is the primary difference between Additive and Subtractive sculptural procedures in Module 6?',
+    question: 'What is the primary technical difference between Additive and Subtractive sculptural procedures?',
     options: [
       { id: 'A', text: 'Additive removes material; Subtractive melts material' },
       { id: 'B', text: 'Additive adds/builds up material; Subtractive cuts away or removes material' },
@@ -106,12 +106,12 @@ export const quizQuestions = [
       { id: 'D', text: 'There is no technical difference between the two' }
     ],
     correctAnswer: 'B',
-    explanation: 'Module 6 (Page 51) establishes: "These processes are either additive (added material) or subtractive (material is removed or carved out)."',
-    moduleReference: 'Module 6, Section 6.6 (Page 51)'
+    explanation: 'Sculptural procedures are fundamentally divided into subtractive (where material is removed or carved out of a solid mass) and additive (where material is built up, molded, or assembled).',
+    moduleReference: 'Sculptural Procedures'
   },
   {
     id: 9,
-    question: 'In wood carving, what specialized tool is specifically used for "carving hollows, rounds, and sweeping curves"?',
+    question: 'In traditional wood carving, what specialized tool is specifically used for "carving hollows, rounds, and sweeping curves"?',
     options: [
       { id: 'A', text: 'The gouge' },
       { id: 'B', text: 'The slicer saw' },
@@ -119,12 +119,12 @@ export const quizQuestions = [
       { id: 'D', text: 'The armature wire' }
     ],
     correctAnswer: 'A',
-    explanation: 'Module 6 (Page 51) details wood carving tools: the specialized carving knife, the slicer saw, the chisel (for lines and flat surfaces), and "the gouge (used in carving hollows, rounds, and sweeping curves)."',
-    moduleReference: 'Module 6, Section 6.6 (Page 51)'
+    explanation: 'Traditional wood carving employs distinct hand tools: the gouge is crafted specifically for carving hollows, rounds, and sweeping curves, while straight chisels shape planar surfaces and lines.',
+    moduleReference: 'Wood Carving Tools'
   },
   {
     id: 10,
-    question: 'How is "Slip casting" described in the module’s discussion on casting techniques?',
+    question: 'How is "Slip casting" defined within sculptural and ceramic reproduction techniques?',
     options: [
       { id: 'A', text: 'Shaping rough granite using hand chisels' },
       { id: 'B', text: 'A technique for the mass-production of pottery, especially for shapes not easily made on a wheel' },
@@ -132,12 +132,12 @@ export const quizQuestions = [
       { id: 'D', text: 'Pouring hot wax over marble to protect it from moisture' }
     ],
     correctAnswer: 'B',
-    explanation: 'Module 6 (Page 51) defines slip casting as "a technique for the mass-production of pottery, especially for shapes not easily made on a wheel."',
-    moduleReference: 'Module 6, Section 6.6 (Page 51)'
+    explanation: 'Slip casting is a specialized ceramic reproduction technique where liquid clay (slip) is poured into plaster molds to mass-produce complex, hollow vessels not easily formed on a wheel.',
+    moduleReference: 'Casting & Reproduction'
   },
   {
     id: 11,
-    question: 'According to Step 6 of the Soap Sculpture instructions in Module 6, what can you use to smooth rough patches on your soap carving?',
+    question: 'In subtractive soap carving, how can rough facets and edges be softened and smoothed without abrasive tools?',
     options: [
       { id: 'A', text: 'Coarse industrial sandpaper' },
       { id: 'B', text: 'Your fingers, because your body heat will soften the soap' },
@@ -145,12 +145,12 @@ export const quizQuestions = [
       { id: 'D', text: 'Soaking it overnight in boiling water' }
     ],
     correctAnswer: 'B',
-    explanation: 'Module 6 (Page 52, Step 6) instructs: "To smooth rough patches of your soap use your fingers. Your body heat will serve as to soften the soap, making it easier to create a smooth surface."',
-    moduleReference: 'Module 6 Self-Evaluation (Page 52)'
+    explanation: 'Using gentle fingertip rubbing, natural body warmth softens the soap medium, allowing sculptors to burnish and smooth rough facets into even curves.',
+    moduleReference: 'Studio Carving Techniques'
   },
   {
     id: 12,
-    question: 'What is the definition of "Atélier" as given in the module’s Review of Concepts?',
+    question: 'What is the definition and historical origin of the term "Atélier"?',
     options: [
       { id: 'A', text: 'A skeleton wire framework used inside paper-mâché' },
       { id: 'B', text: 'A French word meaning "studio" and referring precisely to the place where an artist works' },
@@ -158,7 +158,7 @@ export const quizQuestions = [
       { id: 'D', text: 'Art that has no reference to any figurative reality' }
     ],
     correctAnswer: 'B',
-    explanation: 'Under Review of Concepts, Module 6 defines Atélier as "A French word meaning \'studio\' and referring precisely to the place where an artist works."',
-    moduleReference: 'Module 6 Review of Concepts'
+    explanation: 'Originating from the French word for workshop, an atelier refers specifically to the private studio or laboratory where an artist plans, models, and executes works.',
+    moduleReference: 'Studio Vocabulary'
   }
 ];

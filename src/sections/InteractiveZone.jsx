@@ -208,14 +208,14 @@ export default function InteractiveZone() {
         <SectionHeader
           tag="Interactive Zone • Play & Learn"
           title="The Sculpture Learning Lab"
-          subtitle="Test your mastery of Module 6 through 4 distinct interactive challenges: multiple-choice examination, term matching, artwork detective inquiry, and guided hermeneutic analysis."
+          subtitle="Deepen your appreciation through 4 distinct interactive challenges: multiple-choice examination, term matching, artwork detective inquiry, and guided hermeneutic analysis."
         />
 
         {/* Activity Selection Tabs */}
         <div className="flex flex-wrap justify-center gap-3 mb-10">
           {[
             { id: 'quiz', label: '1. Master Quiz (12 Qs)', icon: Award, desc: 'Multiple-Choice with explanations' },
-            { id: 'matching', label: '2. Match the Terms', icon: Puzzle, desc: 'Module 6 terminology pairing' },
+            { id: 'matching', label: '2. Match the Terms', icon: Puzzle, desc: 'Sculptural terminology pairing' },
             { id: 'guess', label: '3. Guess the Sculpture', icon: Search, desc: 'Clue-based artwork deduction' },
             { id: 'decode', label: '4. Decode the Artwork', icon: Eye, desc: 'Guided critical interpretation' },
           ].map(act => {
@@ -302,7 +302,7 @@ export default function InteractiveZone() {
                     </div>
                     <p>{currentQuestion.explanation}</p>
                     <span className="block mt-2 text-[10px] text-charcoal-400 font-mono">
-                      Ref: {currentQuestion.moduleReference}
+                      Topic Area: {currentQuestion.moduleReference}
                     </span>
                   </div>
                 )}
@@ -338,11 +338,11 @@ export default function InteractiveZone() {
 
                 <div className="p-6 bg-ivory rounded-2xl border border-stone-gray/30 max-w-md mx-auto text-xs text-charcoal-700 space-y-2">
                   <span className="font-bold text-terracotta text-sm block">
-                    {calculateScore() >= 10 ? 'Distinguished Art Scholar!' : calculateScore() >= 7 ? 'Proficient Sculptural Scholar' : 'Good Effort! Review Module 6'}
+                    {calculateScore() >= 10 ? 'Distinguished Art Scholar!' : calculateScore() >= 7 ? 'Proficient Sculptural Scholar' : 'Good Effort! Keep Exploring'}
                   </span>
                   <p>
                     {calculateScore() >= 10 
-                      ? 'Exceptional mastery of Module 6 concepts, terminology, artists, and technical procedures!' 
+                      ? 'Exceptional mastery of foundational sculptural concepts, terminology, artists, and technical procedures!' 
                       : 'You have a solid foundation in sculpture. Feel free to re-read the glossary and retake the quiz to sharpen your score.'}
                   </p>
                 </div>
@@ -367,7 +367,7 @@ export default function InteractiveZone() {
             <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-stone-gray/20 mb-6 gap-2">
               <div>
                 <h3 className="font-display-serif text-2xl font-bold text-charcoal">
-                  Match the Module 6 Terms
+                  Match the Sculptural Terms
                 </h3>
                 <p className="text-xs text-charcoal-600">
                   Select a Term on the left, then click its corresponding Definition on the right.
@@ -424,7 +424,7 @@ export default function InteractiveZone() {
               {/* Definitions Column (shuffled order) */}
               <div className="space-y-2.5">
                 <span className="text-[11px] font-bold uppercase tracking-wider text-charcoal-500 block mb-2">
-                  Definitions from Module 6
+                  Curatorial Definitions
                 </span>
                 {[...termMatchingPairs].reverse().map((item) => {
                   const isMatched = matchedPairs.includes(item.id);
