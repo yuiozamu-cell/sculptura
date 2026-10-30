@@ -79,7 +79,7 @@ export const groupInfo = {
       name: 'Olvis, Gilbert B.',
       role: 'Quality Assurance & Testing Specialist',
       contribution: 'Tests website functionality, checks responsiveness, identifies bugs, and assists with final quality checks.',
-      avatar: './members_images/olvis_gilbert_b.jpg',
+      avatar: './members_images/olvis_gilbert_b_original.png',
       favoriteQuote: '“To smooth rough patches of your soap, use your fingers; your warmth softens the medium into harmony.” — Studio Practice Guide'
     }
   ]
