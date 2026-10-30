@@ -6,7 +6,7 @@
 export const groupInfo = {
   groupNumber: 'Group 6',
   topic: 'Sculpture — Where Form Becomes Meaning',
-  course: 'Art Appreciation (GE-AA)',
+  course: 'Art Appreciation (GE-Art App)',
   semester: 'Midterm Project 2026',
   institution: 'Department of Humanities and Arts',
   instructor: {

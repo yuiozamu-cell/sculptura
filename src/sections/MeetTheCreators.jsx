@@ -58,9 +58,6 @@ export default function MeetTheCreators() {
                   <ZoomIn className="w-6 h-6" />
                   <span className="font-medium text-[11px]">View Photo</span>
                 </div>
-                <div className="absolute bottom-2 left-2 right-2 text-center bg-black/60 backdrop-blur-xs text-white text-[10px] font-medium py-0.5 rounded-sm">
-                  Instructor Photo
-                </div>
               </button>
             </div>
 
@@ -90,7 +87,7 @@ export default function MeetTheCreators() {
 
               <div className="pt-2 text-[11px] text-charcoal-500 flex items-center gap-2">
                 <CheckCircle2 className="w-3.5 h-3.5 text-olive" />
-                <span>Course: Art Appreciation (GE-AA) • Midterm Project 2026</span>
+                <span>Course: Art Appreciation (GE-Art App) • Midterm Project 2026</span>
               </div>
             </div>
 
