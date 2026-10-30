@@ -43,7 +43,7 @@ export default function MeetTheCreators() {
                   ...groupInfo.instructor,
                   avatar: groupInfo.instructor.photo,
                   role: groupInfo.instructor.role,
-                  contribution: groupInfo.instructor.message,
+                  contribution: groupInfo.instructor.mostUsedLines || [groupInfo.instructor.message],
                   memberNumber: null
                 })}
                 className="w-36 h-36 sm:w-44 sm:h-44 rounded-2xl overflow-hidden bg-ivory border-2 border-stone-gray/40 shadow-md relative group cursor-pointer focus:outline-hidden focus:ring-2 focus:ring-terracotta"
@@ -77,12 +77,17 @@ export default function MeetTheCreators() {
               </p>
 
               <div className="bg-ivory/60 p-4 rounded-xl border border-stone-gray/20">
-                <span className="text-[11px] font-bold uppercase tracking-wider text-charcoal-500 block mb-1">
+                <span className="text-[11px] font-bold uppercase tracking-wider text-charcoal-500 block mb-2">
                   Most Used Lines:
                 </span>
-                <p className="text-xs sm:text-sm text-charcoal-700 leading-relaxed font-light italic">
-                  “{groupInfo.instructor.message}”
-                </p>
+                <ul className="space-y-1.5 text-xs sm:text-sm text-charcoal-700 font-light italic">
+                  {(groupInfo.instructor.mostUsedLines || [groupInfo.instructor.message]).map((line, idx) => (
+                    <li key={idx} className="flex items-center gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-terracotta shrink-0"></span>
+                      <span>{line}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
 
               <div className="pt-2 text-[11px] text-charcoal-500 flex items-center gap-2">
@@ -233,10 +238,21 @@ export default function MeetTheCreators() {
                 </div>
 
                 <div className="bg-ivory/70 p-4 sm:p-5 rounded-2xl border border-stone-gray/20 text-xs sm:text-sm text-charcoal-700 leading-relaxed">
-                  <span className="font-bold text-charcoal block mb-1 text-xs uppercase tracking-wider text-charcoal-900">
+                  <span className="font-bold text-charcoal block mb-2 text-xs uppercase tracking-wider text-charcoal-900">
                     {selectedMember.memberNumber ? 'Assigned Contribution:' : 'Most Used Lines:'}
                   </span>
-                  <p className="text-charcoal-700">{selectedMember.contribution}</p>
+                  {Array.isArray(selectedMember.contribution) ? (
+                    <ul className="space-y-1.5 font-light italic">
+                      {selectedMember.contribution.map((line, idx) => (
+                        <li key={idx} className="flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-terracotta shrink-0"></span>
+                          <span>{line}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p className="text-charcoal-700">{selectedMember.contribution}</p>
+                  )}
                 </div>
 
                 {selectedMember.favoriteQuote && (

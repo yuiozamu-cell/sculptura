@@ -16,7 +16,11 @@ export const groupInfo = {
     honorific: 'Faculty Instructor',
     department: 'College of Arts and Sciences',
     photo: './members_images/orejas_benedict_a.jpg',
-    message: 'Charrroooottt!!'
+    mostUsedLines: [
+      '“Charrroooottt!!”',
+      '“Haman si Silingan?”'
+    ],
+    message: '“Charrroooottt!!” • “Haman si Silingan?”'
   },
   members: [
     {
