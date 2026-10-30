@@ -76,10 +76,10 @@ export const groupInfo = {
     {
       id: 'member-7',
       memberNumber: 7,
-      name: 'Olvis, Bert',
+      name: 'Olvis, Gilbert B.',
       role: 'Quality Assurance & Testing Specialist',
       contribution: 'Tests website functionality, checks responsiveness, identifies bugs, and assists with final quality checks.',
-      avatar: './members_images/olvis_bert.jpg',
+      avatar: './members_images/olvis_gilbert_b.jpg',
       favoriteQuote: '“To smooth rough patches of your soap, use your fingers; your warmth softens the medium into harmony.” — Studio Practice Guide'
     }
   ]

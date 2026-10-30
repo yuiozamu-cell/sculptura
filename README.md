@@ -156,6 +156,6 @@ SCULPTURA is fully optimized for static zero-config deployment on **Vercel** wit
 | **4** | **Dumas, Kent Bryan M.** | Interactive Activities Developer |
 | **5** | **Salinas, Kevin Carl C.** | Database & Backend Developer |
 | **6** | **Erno, Jhelmar C.** | Documentation & References Specialist |
-| **7** | **Olvis, Bert** | Quality Assurance & Testing Specialist |
+| **7** | **Olvis, Gilbert B.** | Quality Assurance & Testing Specialist |
 
 * **Faculty Mentor & Evaluator:** **Orejas, Benedict A.** — Faculty Instructor, College of Arts and Sciences
