@@ -15,7 +15,7 @@ export const groupInfo = {
     role: 'FACULTY INSTRUCTOR - COLLEGE OF ARTS AND SCIENCES',
     honorific: 'Faculty Instructor',
     department: 'College of Arts and Sciences',
-    photo: './members_images/olvis_bert.jpg',
+    photo: './members_images/orejas_benedict_a.jpg',
     message: 'Charrroooottt!!'
   },
   members: [
